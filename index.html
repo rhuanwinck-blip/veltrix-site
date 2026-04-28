@@ -1,158 +1,241 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Veltrix AI</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0a0a0a;
-      color: #fff;
-    }
+  <title>Veltrix AI | Crescimento automático com IA</title>
+  <meta name="description" content="A Veltrix AI ajuda empresas a vender mais com atendimento inteligente, follow-up, marketing automático e automação." />
 
-    header {
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #000;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 22px;
-    }
-
-    nav a {
-      color: #ccc;
-      margin-left: 20px;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      color: #00ff88;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    .hero h2 {
-      font-size: 42px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      color: #aaa;
-      font-size: 18px;
-    }
-
-    .btn {
-      margin-top: 25px;
-      padding: 15px 30px;
-      background: #00ff88;
-      color: #000;
-      border: none;
-      cursor: pointer;
-      font-weight: bold;
-      border-radius: 5px;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .plans {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .card {
-      background: #111;
-      padding: 30px;
-      border-radius: 10px;
-      width: 250px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #777;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<header>
-  <h1>Veltrix AI</h1>
-  <nav>
-    <a href="#como">Como funciona</a>
-    <a href="#planos">Planos</a>
-  </nav>
-</header>
+  <header class="header">
+    <div class="logo">Veltrix<span>AI</span></div>
 
-<section class="hero">
-  <h2>Aumente suas vendas automaticamente com IA</h2>
-  <p>Atendimento, marketing e automação funcionando 24h para sua empresa.</p>
+    <nav class="nav">
+      <a href="#dor">A dor</a>
+      <a href="#solucao">Solução</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#planos">Planos</a>
+    </nav>
 
-  <a href="#planos" class="btn">Começar agora</a>
-</section>
+    <a href="#planos" class="btn-header">Começar</a>
+  </header>
 
-<section class="section">
-  <h2>O Problema</h2>
-  <p>Você perde clientes todos os dias por demora na resposta e falta de marketing.</p>
-</section>
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge">IA + Marketing + Automação</span>
 
-<section class="section" id="como">
-  <h2>Como funciona</h2>
-  <p>1. Você assina<br>2. Configura sua empresa<br>3. O sistema começa a rodar</p>
-</section>
+      <h1>Sua empresa perde clientes todos os dias sem perceber.</h1>
 
-<section class="section" id="planos">
-  <h2>Planos</h2>
+      <p>
+        Quando um cliente chama e não recebe resposta rápida, ele procura outro.
+        A Veltrix AI ajuda sua empresa a responder, acompanhar e converter mais oportunidades automaticamente.
+      </p>
 
-  <div class="plans">
-
-    <div class="card">
-      <h3>Mensal</h3>
-      <p>R$1.600/mês</p>
-      <a href="https://link-mensal.com" target="_blank" class="btn">
-        Assinar
-      </a>
+      <div class="hero-buttons">
+        <a href="#planos" class="btn-primary">Quero vender mais</a>
+        <a href="#como-funciona" class="btn-secondary">Ver como funciona</a>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>6 meses</h3>
-      <p>R$1.400/mês</p>
-      <a href="https://link-6meses.com" target="_blank" class="btn">
-        Assinar
-      </a>
+    <div class="hero-card">
+      <h3>Hoje sua empresa pode estar perdendo:</h3>
+      <ul>
+        <li>Leads que não foram respondidos</li>
+        <li>Clientes que esqueceram de comprar</li>
+        <li>Vendas por falta de follow-up</li>
+        <li>Alcance por falta de conteúdo</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="dor" class="section light">
+    <span class="section-label">O problema</span>
+    <h2>O cliente chega até você, mas escapa antes de comprar.</h2>
+
+    <div class="pain-grid">
+      <div class="pain-card">
+        <h3>Resposta lenta</h3>
+        <p>
+          O cliente manda mensagem querendo comprar, mas se a resposta demora,
+          ele perde o interesse ou fecha com concorrente.
+        </p>
+      </div>
+
+      <div class="pain-card">
+        <h3>Falta de follow-up</h3>
+        <p>
+          Muitas vendas não acontecem na primeira conversa.
+          Sem acompanhamento, o lead esfria e desaparece.
+        </p>
+      </div>
+
+      <div class="pain-card">
+        <h3>Marketing inconsistente</h3>
+        <p>
+          A empresa posta quando lembra, não mantém presença e acaba sendo esquecida pelo público.
+        </p>
+      </div>
+
+      <div class="pain-card">
+        <h3>Dados desorganizados</h3>
+        <p>
+          Sem controle, o dono não sabe quantos leads chegaram, quantos responderam e onde está perdendo dinheiro.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="solucao" class="section dark">
+    <span class="section-label green">A solução</span>
+    <h2>Um sistema que trabalha para sua empresa mesmo quando você não está online.</h2>
+
+    <div class="solution-grid">
+      <div class="solution-card">
+        <span>01</span>
+        <h3>Atendimento inteligente</h3>
+        <p>
+          A IA responde clientes, tira dúvidas iniciais e ajuda a conduzir a conversa para uma ação.
+        </p>
+      </div>
+
+      <div class="solution-card">
+        <span>02</span>
+        <h3>Follow-up automático</h3>
+        <p>
+          O sistema lembra o cliente, acompanha oportunidades e reduz vendas perdidas por esquecimento.
+        </p>
+      </div>
+
+      <div class="solution-card">
+        <span>03</span>
+        <h3>Marketing automático</h3>
+        <p>
+          A plataforma ajuda a criar ideias, legendas e posts para manter sua marca ativa nas redes sociais.
+        </p>
+      </div>
+
+      <div class="solution-card">
+        <span>04</span>
+        <h3>Visão de crescimento</h3>
+        <p>
+          Você enxerga melhor o que está acontecendo e identifica onde pode melhorar para vender mais.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="section light">
+    <span class="section-label">Como funciona</span>
+    <h2>Você não precisa entender de tecnologia. O sistema foi criado para simplificar.</h2>
+
+    <div class="steps">
+      <div class="step">
+        <div class="number">1</div>
+        <h3>Escolha o plano</h3>
+        <p>
+          Você seleciona o plano ideal para sua empresa e realiza o pagamento com segurança.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="number">2</div>
+        <h3>Preencha os dados</h3>
+        <p>
+          Informe sobre sua empresa, público, serviços, redes sociais e objetivo principal.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="number">3</div>
+        <h3>Ativamos a operação</h3>
+        <p>
+          A Veltrix AI começa a organizar atendimento, marketing, follow-up e automações.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section premium">
+    <div class="premium-text">
+      <span class="section-label green">Privacidade</span>
+      <h2>O cliente usa o sistema. A tecnologia por trás fica protegida.</h2>
+      <p>
+        Cada empresa tem acesso individual e privado. As informações são usadas apenas para configurar e operar o sistema.
+        O ecossistema interno da Veltrix AI não é exposto ao cliente.
+      </p>
     </div>
 
-    <div class="card">
-      <h3>12 meses</h3>
-      <p>R$1.000/mês</p>
-      <a href="https://link-anual.com" target="_blank" class="btn">
-        Assinar
-      </a>
+    <div class="premium-box">
+      <p>🔒 Pagamento seguro</p>
+      <p>🔐 Dados protegidos</p>
+      <p>📄 Termos e contrato digital</p>
+      <p>✅ Estrutura pensada para LGPD</p>
     </div>
+  </section>
 
-  </div>
-</section>
+  <section id="planos" class="section light">
+    <span class="section-label">Planos</span>
+    <h2>Escolha o nível de crescimento ideal para sua empresa.</h2>
+    <p class="subtitle">Quanto maior o compromisso, menor o valor mensal.</p>
 
-<footer>
-  🔒 Pagamento seguro | 🔐 Dados protegidos (LGPD)
-</footer>
+    <div class="pricing">
+      <div class="price-card">
+        <h3>Mensal</h3>
+        <p class="price">R$1.600<span>/mês</span></p>
+        <ul>
+          <li>Atendimento com IA</li>
+          <li>Follow-up automático</li>
+          <li>Marketing automático</li>
+          <li>Sem fidelidade</li>
+        </ul>
+        <a href="https://link-mensal.com" target="_blank" class="btn-primary">Assinar mensal</a>
+      </div>
 
+      <div class="price-card featured">
+        <div class="tag">Mais escolhido</div>
+        <h3>6 meses</h3>
+        <p class="price">R$1.400<span>/mês</span></p>
+        <ul>
+          <li>Tudo do mensal</li>
+          <li>Valor reduzido</li>
+          <li>Suporte prioritário</li>
+          <li>Contrato de 6 meses</li>
+        </ul>
+        <a href="https://link-6meses.com" target="_blank" class="btn-primary">Assinar 6 meses</a>
+      </div>
+
+      <div class="price-card">
+        <h3>12 meses</h3>
+        <p class="price">R$1.000<span>/mês</span></p>
+        <ul>
+          <li>Melhor custo mensal</li>
+          <li>Prioridade máxima</li>
+          <li>Operação contínua</li>
+          <li>Contrato anual</li>
+        </ul>
+        <a href="https://link-anual.com" target="_blank" class="btn-primary">Assinar anual</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Enquanto sua empresa demora para responder, alguém está escolhendo seu concorrente.</h2>
+    <p>
+      Comece a transformar mensagens perdidas em oportunidades reais de venda.
+    </p>
+    <a href="#planos" class="btn-primary">Ver planos</a>
+  </section>
+
+  <footer class="footer">
+    <div class="logo">Veltrix<span>AI</span></div>
+    <p>© 2026 Veltrix AI. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

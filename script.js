@@ -1,7 +1,9 @@
 console.log("Veltrix AI carregado com sucesso.");
 
-document.querySelectorAll(".btn-primary").forEach((button) => {
+const buttons = document.querySelectorAll("a[href='#planos']");
+
+buttons.forEach((button) => {
   button.addEventListener("click", () => {
-    console.log("Clique em botão de assinatura");
+    console.log("Usuário clicou para ver os planos.");
   });
 });

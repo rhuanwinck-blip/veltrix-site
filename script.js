@@ -1,9 +1,22 @@
-console.log("Veltrix AI carregado com sucesso.");
+const planButtons = document.querySelectorAll(".select-plan");
+const selectedPlanText = document.querySelector("#selectedPlanText");
+const form = document.querySelector("#onboardingForm");
+const formNote = document.querySelector("#formNote");
 
-const buttons = document.querySelectorAll("a[href='#planos']");
-
-buttons.forEach((button) => {
+planButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    console.log("Usuário clicou para ver os planos.");
+    const plan = button.dataset.plan;
+    const price = button.dataset.price;
+
+    selectedPlanText.textContent = `${plan} — ${price}`;
+    document.querySelector("#formulario").scrollIntoView({ behavior: "smooth" });
   });
+});
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  formNote.textContent = "Diagnóstico recebido! Próximo passo: nossa equipe valida os dados, prepara os fluxos n8n e define as conexões de IA.";
+  formNote.classList.add("success");
+  form.reset();
 });
